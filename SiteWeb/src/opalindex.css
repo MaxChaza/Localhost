@@ -1,0 +1,40 @@
+@import "index.css";
+#home{
+	background-image: url('../images/card17.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+    width: 100%;
+	text-align:left;
+}
+.menu li:hover > a { color: #00A1CC;}
+
+.myName h1:hover > a { color: #00A1CC; }
+
+a {
+    color: #00A1CC;
+    text-decoration: none;
+}
+a:hover {
+    color: #00A1CC;
+    text-decoration: underline;
+}
+#ligneNoir
+{
+	background-color:#00A1CC;
+}
+
+#ligne
+{
+	background-color:rgba(0, 161, 204, 0.30);
+}
+
+#surmiddle
+{
+	background-color:rgba(0, 161, 204, 0.10);
+}
+
+#lignePied
+{
+	background-color:#00A1CC;
+}
