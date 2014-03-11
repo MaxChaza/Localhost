@@ -4,8 +4,12 @@
     $message=$_POST['_message']; 
     $from=$_POST['_mail']; 
     $phone=$_POST['_tel']; 
-    if(!(empty($phone))){$message.="\r\nMy phone number is " .$phone;} 
-    $headers = "From:" . $from; 
+    if(!empty($phone))
+    {
+        $message= $message . "\r\nMy phone number is " . $phone;
+    } 
+    
+    $headers = "From:".$from; 
     $mail_status = mail($to,$subject,$message,$headers); 
     if($mail_status)
     {
