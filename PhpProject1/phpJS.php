@@ -88,7 +88,7 @@ and open the template in the editor.
             </form>
         </tr>
         <hr>
-        <!--
+        
            <tr>
                 <form name="myForm3" action="mailto:maxime.chazalviel@hotmail.fr" onsubmit="return checkParam()">
                     entrez prenom : <input type="text" name="prenom3"/><br/>
@@ -98,8 +98,8 @@ and open the template in the editor.
                     <input type="submit" value="go3" /><br/>
                 </form>
             </tr>
-        -->
-            <tr>
+        
+<!--            <tr>
                 <form name="myForm3" action="onBosse.php" onsubmit="return checkParam()">
                     entrez prenom : <input type="text" name="prenom3"/><br/>
                     <div id="starPrenom"></div>
@@ -107,7 +107,7 @@ and open the template in the editor.
                     <div id="starNom"></div>
                     <input type="submit" value="go3" /><br/>
                 </form>
-            </tr>
+            </tr>-->
             <hr>
         </table>
     </body>
