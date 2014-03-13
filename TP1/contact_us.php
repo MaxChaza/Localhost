@@ -11,19 +11,8 @@ and open the template in the editor.
          <link rel="stylesheet" type="text/css" href="./css/style.css" />
        
         <?php include('./include/counter.php');?>
-         <script language="javascript" type="text/javascript">
-            function checkParam(){
-                var ok = true;
-                if(document.myForm.prenom.value==""){
-                    ok=false;
-                    document.getElementById("starPrenom").innerHTML="*";
-                }
-                if(document.maForm.nom.value==""){
-                    ok=false;
-                    document.getElementById("starNom").innerHTML="*";
-                }
-                return ok;
-            }
+        <script language="javascript" type="text/javascript">
+            <?php include('./include/checkParam.js');?>
         </script>
     </head>
     <body>
@@ -34,40 +23,33 @@ and open the template in the editor.
         </div>
         <div id="formulaire"> 
             
-            <form name="myForm" action="contact_us.php" onsubmit="return checkParam()" method="POST">
+            <form name="myForm" action="contact_us.php" onsubmit="return checkParam()" method="post">
                 <table>  
                     <tr>
-                        <td>entrez prenom : </td>
+                        <td id="colorPrenom">* Entrez prenom : </td>
                         <td><input type="text" name="prenom"/></td>
-                        <div id="starPrenom"></div>
                     </tr>
                     <tr>
-                        <td>entrez nom :</td>
+                        <td id="colorNom">* Entrez nom :</td>
                         <td><input type="text" name="nom"/></td>
-                        <div id="starNom"></div>
                     </tr>
                     <tr>
-                        <td>entrez telephone :</td> 
+                        <td id="colorTelephone">* Entrez telephone :</td> 
                         <td><input type="text" name="telephone"/></td>
-                        <div id="starTelephone"></div>
+                        <td><div id="formatTelephone"></div></td>
                     </tr>
                     <tr>
-                        <td>entrez mail :</td> 
+                        <td id="colorMail">* Entrez mail :</td> 
                         <td><input type="text" name="mail"/></td>
-                        <div id="starMail"></div>
                     </tr>
                     <tr>   
-                        <td>entrez texte : </td>
+                        <td>  Entrez texte : </td>
                         <td><textarea name="textarea" rows=4 cols=40></textarea></td>
                     </tr>
                     <tr>
                         <td><input type="submit" value="go" /></td>
                         <td><input type="reset" value="reset"/></td>
-                    </tr>
-                
-                    <tr>
-                        <td><input type="submit" value="resetCounter" onclick = "document.forms['myForm'].action='./include/reset.php';" /></td>
-                    </tr>
+                    </tr>                    
                 </table>
             </form>
 <!--                <form method="post" action="get-file.php" encode="">
@@ -75,12 +57,15 @@ and open the template in the editor.
                     <input type="file" 
                 </tr>
             </form>-->
-            </div>
+        </div>
         
+        <div>
+            (*) Les champs pr&eacute;c&eacute;d&eacute;s d'une &eacute;toile sont obligatoires.
+        </div>
         
         <div>
             <?php  
-                if(isset($_POST['prenom']) && isset($_POST['nom'])){
+                if(!empty($_POST['prenom']) && !empty($_POST['nom'])){
                     include('./include/onBosse.php'); 
                 }
             ?>

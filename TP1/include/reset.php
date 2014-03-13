@@ -33,6 +33,6 @@
     // Appel de la fonction
     resetCom();
     // Redirection vers la page de contact
-    header('location: ../contact_us.php');
+    header('location: ../index.php');
 ?>
 
