@@ -6,19 +6,21 @@
         Purpose of the stylesheet follows.
 */
 
-root { 
-    display: block;
+body {
+    width: 100%;
 }
 
 #footer {
     background-color: blue;
-    position: relative;
+    position: absolute;
     bottom: 0px;
     height:40px;
     width: 100%;
 }
 
 #header {
-    background: green;
+    background: red;
     color: white;
+    height:40px;
+    width: 100%;
 }
