@@ -1,0 +1,26 @@
+/* 
+    Document   : myCss
+    Created on : 13 mars 2014, 12:45:35
+    Author     : Maxime
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    width: 100%;
+}
+
+#footer {
+    background-color: blue;
+    position: absolute;
+    bottom: 0px;
+    height:40px;
+    width: 100%;
+}
+
+#header {
+    background: red;
+    color: white;
+    height:40px;
+    width: 100%;
+}
