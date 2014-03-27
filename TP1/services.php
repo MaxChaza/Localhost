@@ -19,9 +19,29 @@ and open the template in the editor.
                 include("./include/header.php");
             ?> 
         </div>
+        <div id="formulaire"> 
+            
+            <form enctype="multipart/form-data" name="myForm" action="./include/upload.php" method="post" >
+                <table>  
+                    <tr>
+                        <td>
+                            <input type="file" name="file1" />
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td>
+                            <input type="file" name="file2" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type='submit' value='go!'/>
+                        </td>
+                    </tr>
+                </table>
+            </form>
         <?php
         // put your code here
-        echo "toto"
         ?>
          <div id="footer">
              <?php  echo calc("./counter/counterService.txt") ?> visitor. 

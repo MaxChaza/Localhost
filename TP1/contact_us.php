@@ -11,8 +11,7 @@ and open the template in the editor.
          <link rel="stylesheet" type="text/css" href="./css/styleCss.css" />
        
         <?php include('./include/counter.php');?>
-        <script language="javascript" type="text/javascript">
-            <?php include('./include/checkParam.js');?>
+        <script language="javascript" type="text/javascript" src="./js/checkParam.js">
         </script>
     </head>
     <body>
