@@ -1,5 +1,6 @@
 <?php
 include("./config.php");
+
 if (isset($_POST['username'])) { 
     $connection=mysql_connect($host, $login, $passwd) or die("impossible de se connecter");
     mysql_select_db($dbname) or die("impossible d'aller sur la bd");
