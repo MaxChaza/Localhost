@@ -2,12 +2,13 @@
     // Connects to your Database
     include("./config.php");
     //This code runs if the form has been submitted
-    if (isset($_POST['submit'])) {
+    
+    if (isset($_POST['submitRegister'])) {
 
-        //This makes sure they did not leave any fields blank
-        if (!$_POST['username']  ) {//doit se faire cote client avec javascript
-            die('You did not complete all of the required fields');
-        }
+//        //This makes sure they did not leave any fields blank
+//        if (!$_POST['username']  ) {//doit se faire cote client avec javascript
+//            die('You did not complete all of the required fields');
+//        }
         //on se connecte
         $connection=mysql_connect($host, $login, $passwd) or die("impossible de se connecter");
         mysql_select_db($dbname) or die("impossible d'aller sur la bd");
@@ -24,7 +25,7 @@
         }
         
         // now we insert it into the database
-        $insert = "INSERT INTO users (username, password) VALUES ('".$_POST['username']."','".$_POST['password']."')";
+        $insert = "INSERT INTO users (username, password) VALUES ('".$_POST['username']."','".md5($_POST['password'])."')";
         $add_member = mysql_query($insert);
         mysql_close($connection);
         ?>
@@ -37,30 +38,38 @@
     else
     {
     ?>
-
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+        
+    <script language="javascript" type="text/javascript" src="./js/checkParam.js">
+    </script>
+    
+    <form  onsubmit="return checkParamRegister()" name="log" method="post">
         <table border="0">
             <tr>
-                <td>Username:</td>
+                <td id="colorUsername">Username:</td>
                 <td>
-                    <input type="text" name="username" maxlength="60">
+                    <input type="text" name="username" id="username" maxlength="60"/>
+                    <script  type="text/javascript" >
+                        var keyUsername = document.getElementById('username');
+                        keyUsername.focus();
+                        keyUsername.select();
+                    </script>
                 </td>
             </tr>
             <tr>
-                <td>Password:</td>
+                <td id="colorPassword">Password:</td>
                 <td>
-                    <input type="password" name="password" maxlength="10">
+                    <input type="password" name="password" id="password" maxlength="10"/>
                 </td>
             </tr>
             <tr>
-                <td>Confirm Password:</td>
+                <td id="colorPassword2">Confirm Password:</td>
                 <td>
-                    <input type="password" name="pass2" maxlength="10">
+                    <input type="password" name="password2" id="password2" maxlength="10"/>
                 </td>
             </tr>
             <tr>
                 <th colspan=2>
-                    <input type="submit" name="submit" value="Register">
+                    <input type="submit" name="submitRegister" value="Register">
                 </th>
             </tr> 
         </table>
