@@ -7,8 +7,8 @@ function checkParamRegister(){
     usernameIsSet=true;
     passwordIsSet=true;
     password2IsSet=true;
-    
-    // Test de la validité du prenom
+    samePassword=true;
+    // Test de la validité du login
     if(document.log.username.value==""){
         ok=false;
         usernameIsSet=false;
@@ -22,7 +22,7 @@ function checkParamRegister(){
         document.getElementById("colorUsername").style.color = 'black';
         usernameIsSet=true;
     }
-    // Test de la validité du nom
+    // Test de la validité du 1er password
     if(document.log.password.value==""){
         ok=false;
         passwordIsSet=false;
@@ -39,7 +39,7 @@ function checkParamRegister(){
     }
 
 
-    // Test de la validité du téléphone 
+    // Test de la validité du 2eme password
     if(document.log.password2.value==""){
         ok=false;
         password2IsSet=false;
@@ -54,7 +54,29 @@ function checkParamRegister(){
         password2IsSet=true;
         document.getElementById("colorPassword2").style.color = 'black';
     }
-     
+       
+    // Test de la correspondance des 2 passwords
+    if(!(document.log.password.value==document.log.password2.value)){
+        ok=false;
+        samePassword=false;
+        document.log.password.value="";
+        document.log.password2.value="";
+        document.getElementById("erreurPassword").style.color = 'red';
+        document.getElementById("erreurPassword").innerHTML="Password mal confirm&eacute;!";
+                       
+        var keyPassword = document.getElementById('password');
+            keyPassword.focus();
+            keyPassword.select();
+    }
+    else
+    {
+        if(passwordIsSet){
+            samePassword=true;
+            document.getElementById("colorPassword").style.color = 'black';
+            document.getElementById("colorPassword2").style.color = 'black';
+        }
+    }
+    
     return ok;
 }
 

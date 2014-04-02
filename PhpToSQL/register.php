@@ -4,7 +4,8 @@
     //This code runs if the form has been submitted
     
     if (isset($_POST['submitRegister'])) {
-
+//        if ($_POST['password']!=$_POST['password2'])
+//            die('Sorry, pasword different.');
 //        //This makes sure they did not leave any fields blank
 //        if (!$_POST['username']  ) {//doit se faire cote client avec javascript
 //            die('You did not complete all of the required fields');
@@ -59,6 +60,8 @@
                 <td id="colorPassword">Password:</td>
                 <td>
                     <input type="password" name="password" id="password" maxlength="10"/>
+                    <td><div id="erreurPassword"></div></td>
+                   
                 </td>
             </tr>
             <tr>

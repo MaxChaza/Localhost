@@ -18,9 +18,180 @@ body {
     width: 100%;
 }
 
-#header {
-    background: red;
-    color: white;
-    height:40px;
-    width: 100%;
+#header
+{ 
+	position: fixed;
+	z-index: 11;
+	top: 3px;
+	background-color:rgba(0, 0, 0, 0.82);
+	height:75px;
+	width: 100%;
+}
+
+#ligneNoir
+{
+	position: fixed;
+	top: 0;
+	background-color:rgba(0, 0, 0, 1);
+	height:3px;
+	width: 100%;
+	z-index: 11;
+}
+
+#ligne
+{
+	position: fixed;
+	top: 78px;
+	background-color:rgba(0, 0, 0, 1);
+	height:2px;
+	width: 100%;
+	z-index: 12;
+}
+
+.myName {
+	color: white;
+    top:15px;
+	position: relative;
+	
+	margin-right: 15%;
+	text-align:right;
+	width:233px;
+	float: right;
+}
+
+.myName h1 a {
+	text-decoration: none;
+
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	-ms-transition: color .5 ease-in-out;
+	transition: color .5s ease-in-out;
+}
+.myName h1:first-child a { border-left: none; }
+.myName h1:last-child a{ border-right: none; }
+.myName h1:hover > a { color: #37B5C4; }
+
+.menu,.menu ul,.menu li,.menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	
+}
+
+.menu {
+
+	position: relative;
+	height: 75px;
+	width:313px;
+    top:20px;
+	text-align: left;
+	margin-left: 15%;
+}
+
+.menu li {
+
+	position: relative;
+	list-style: none;
+	float: left;
+	display: block;
+	height: 75px;
+	
+}
+
+.menu li a {
+
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	
+	text-decoration: none;
+
+	/* Pour mettre en place un s�parateur
+	line-height: 40px;
+	border-left: 1px solid #393942;
+	border-right: 1px solid #4f5058;*/
+	font-size: 15px;
+
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+
+	-webkit-transition: color .5s ease-in-out;
+	-moz-transition: color .5s ease-in-out;
+	-o-transition: color .5s ease-in-out;
+	-ms-transition: color .5s ease-in-out;
+	transition: color .5s ease-in-out;
+}
+
+.menu li:hover > a { color: #37B5C4;}
+
+.menu ul {
+
+	position: absolute;
+	top: 55px;
+	left: 0;
+
+	opacity: 0;
+	background-color:rgba(0, 0, 0, 0.82);
+
+	-webkit-border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+
+	-webkit-transition: opacity 2s ease .1s;
+	-moz-transition: opacity 2s ease .1s;
+	-o-transition: opacity 2s ease .1s;
+	-ms-transition: opacity 2s ease .1s;
+	transition: opacity 2s ease .1s;
+}
+
+.menu li:hover > ul { opacity: 1; }
+
+.menu ul li {
+
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+
+	-webkit-transition: height .25s ease .01s;
+	-moz-transition: height .25s ease .01s;
+	-o-transition: height .25s ease .01s;
+	-ms-transition: height .25s ease .01s;
+	transition: height .25s ease .01s;
+}
+
+.menu li:hover > ul li {
+	height: 26px;
+	overflow: visible;
+	padding: 0;
+}
+
+.menu ul li a {
+
+	width: 150px;
+	padding: 4px 0 4px 40px;
+	margin: 0;
+
+	border: none;
+	border-bottom: 1px solid #353539;
+}
+
+
+.menu ul li:last-child a { border: none; }
+
+.menu a.documents { background: url(../images/star1.png) no-repeat 6px center; }
+.menu a.messages { background: url(../images/opallogo.png) no-repeat 6px center; }
+.menu a.signout { background: url(../images/Q.png) no-repeat 6px center; }
+
+#home
+{
+	z-index: 9;
+	background-color:#FFFFFF;
+    color: #333333;
+	height: 600px;
+	text-align:left;
 }
