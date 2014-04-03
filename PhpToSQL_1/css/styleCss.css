@@ -187,17 +187,24 @@ body {
 .menu a.messages { background: url(../images/opallogo.png) no-repeat 6px center; }
 .menu a.signout { background: url(../images/Q.png) no-repeat 6px center; }
 
-#home
+/*#home
 {
 	z-index: 9;
 	background-color:#FFFFFF;
         color: #333333;
 	height: 600px;
 	text-align:left;
-}
+}*/
 
-#container {  
+/*#container {  
         z-index: 9;
 	margin-top: 180px;
 	position:absolute;
-}  
+}  */
+
+#content {
+    color: black;
+    margin-left: 100px;
+    margin-top:90px;
+    text-align:justify;
+}
