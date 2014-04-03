@@ -16,10 +16,19 @@ and open the template in the editor.
     </head>
     
     <body>
-        <div id="header">
+        <div id="ligneNoir" >
+	</div>
+        
+	<div id="ligne" >
+	</div>
+
+
+        <div id="home">
+            <div id="header">
             <?php 
                 include("./include/header.php");
             ?> 
+            </div>
         </div>
         <div>
             Coucou
