@@ -43,7 +43,7 @@ if (isset($_POST['username'])) {
     <script language="javascript" type="text/javascript" src="./js/checkParam.js">
     </script>
     
-    <form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+    <form name="log" method="post" onsubmit="return checkParamLogin()">
         <table border="0">
             <tr>
                 <td>
@@ -53,7 +53,7 @@ if (isset($_POST['username'])) {
             <tr>
                 <td id="colorUsername" colspan="0">Username:</td>
                 <td>
-                    <input type="text" name="username" id="username" onsubmit="checkParamLogin()" maxlength="20">
+                    <input type="text" name="username" id="username" maxlength="20">
                     <script  type="text/javascript" >
                         var keyUsername = document.getElementById('username');
                         keyUsername.focus();
@@ -74,14 +74,14 @@ if (isset($_POST['username'])) {
             </tr>
             <tr>
                 <td>
-                    Cliquer <a href=register.php>ici</a> pour vous enregistrer
+                    Cliquer <a href=register.php>ici</a> pour vous enregistrer.
                 </td>
                 <td id="reponse" colspan="0">
                     <?php
                     if(!$trouve)
                     {
                     ?>
-                        <div id="reponse" color="red">
+                        <div id="reponse" style="color:red;">
                             Votre password et votre login ne correspondent pas. 
                         </div>
                     <?php
