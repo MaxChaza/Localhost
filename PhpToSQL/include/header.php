@@ -1,32 +1,22 @@
-
-<a href="./index.php" >Home</a>         
-<a href="./login.php">Se connecter</a>
-<a href="./contact_us.php">Contact</a>
 <div class="myName">
-                        <h1><a  href="./index.php">Maxime Chazalviel</a></h1>
+                        <h1><a  href="./index.php">Home</a></h1>
 </div>
 <ul class="menu">
-
-				<li><a><?php echo $projets;?></a>
-
-					<ul>
-
-						<li><a href="src/asteroids.php" class="documents">Asteroids</a></li>
-
-						<li><a href="src/opal.php" class="messages">Opal-GUI</a></li>
-
-						<li><a href="src/quadran.php" class="signout">Quadran</a></li>
-
-						<!-- <li><a href="#" class="signout"><?php echo $projetut;?></a></li>-->
-
-					</ul>
-
-				</li>
-
-				<li><a href="src/cv.php">CV</a></li>
-
-				<li><a href="src/contact.php">Contact</a></li>
-
-				<!-- <li><a href="#"><?php echo $autres;?></a></li>-->
-
+    <li><a>TP1</a>
+        <ul>
+                <li><a href="./services.php">Service</a></li>
+                <li><a href="./contact_us.php">Contact</a></li>
+        </ul>
+    </li>
+    <li><a>TP2</a>
+        <ul>
+                <li><a href="./login.php">Se connecter</a></li>
+                <li><a href="./register.php">S'enregistrer</a></li>
+        </ul>
+    </li>
+    <li><a>TP3</a>
+        <ul>
+                <li><a href="./exAjax.php">AJAX</a></li>
+        </ul>
+    </li>
 </ul>

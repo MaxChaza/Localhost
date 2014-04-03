@@ -101,7 +101,7 @@ function checkParamLogin(){
         usernameIsSet=true;
     }
     // Test de la validité du nom
-    if(document.log.pass.value==""){
+    if(document.log.password.value==""){
         ok=false;
         passwordIsSet=false;
         document.getElementById('colorPassword').style.color = 'red';
