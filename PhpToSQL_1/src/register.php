@@ -11,7 +11,7 @@
 //            die('You did not complete all of the required fields');
 //        }
         //on se connecte
-        $connection=mysql_connect($host, $login, $passwd) or die("impossible de se connecter");
+        $connection=mysql_connect($host, htmlentities($login), htmlentities($passwd)) or die("impossible de se connecter");
         mysql_select_db($dbname) or die("impossible d'aller sur la bd");
         // checks if the username is in use
 
@@ -72,7 +72,7 @@
             </tr>
             <tr>
                 <th colspan=2>
-                    <input type="submit" name="submitRegister" value="Register">
+                    <input type="submit" name="submitRegister" value="Register" >
                 </th>
             </tr> 
         </table>

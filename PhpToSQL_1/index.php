@@ -12,7 +12,11 @@ and open the template in the editor.
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
         <link rel="stylesheet" type="text/css" href="./css/styleCss.css" />
-        <?php include('./include/counter.php');?>         
+        <?php include('./include/counter.php');?> 
+        <script language="javascript" type="text/javascript" src="./js/checkParam.js">
+        </script>
+        <script language="javascript" type="text/javascript" src="./js/ajaxUpload.js">
+        </script>
     </head>
     
     <body>

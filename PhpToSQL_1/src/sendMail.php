@@ -6,9 +6,9 @@
 
     $to="maxime.chazalviel@hotmail.fr"; 
     $subject="info";
-    $message=$_POST['message'];
-    $from=$_POST['mail'];
-    $phone=$_POST['telephone'];
+    $message=  htmlentities($_POST['message']);
+    $from=htmlentities($_POST['mail']);
+    $phone=htmlentities($_POST['telephone']);
     if(!empty($phone))
     {
         $message=$message."\r\nMy phone number is ".$phone;
