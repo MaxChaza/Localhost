@@ -1,0 +1,11 @@
+-connection BD
+-ajouter user
+-supprimer user
+-ajouter categorie
+-supprimer categorie
+-modifier categorie
+-ajouter message
+-supprimer message
+-modifier message
+-rechercherMessageTitre
+-rechercherMessageContenu

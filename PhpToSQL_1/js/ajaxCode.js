@@ -14,14 +14,17 @@ return ajax;
 
 function showContent(content)
 {
+    
     ajax=CreateAjaxObject();
     if (ajax==null){
         alert ("Your browser does not support XMLHTTP!");
     }
+           
     var url="./src/"+content+".php";
     ajax.onreadystatechange=displayOnly; //we execute this function in case...
-    ajax.open("GET",url,true); //we open the request
+    ajax.open("POST",url,true); //we open the request
     ajax.send(); //we send the request
+    
 }
 
 function displayOnly()

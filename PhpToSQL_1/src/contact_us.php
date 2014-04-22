@@ -15,7 +15,7 @@ and open the template in the editor.
         
     </head>
     <body>
-        <form name="myForm" action="sendMail.php" onsubmit="return checkParam()" method="post">
+        <form name="myForm" action="./src/sendMail.php" onsubmit="return checkParam()" method="post">
             <table>  
                 <tr>
                     <td id="colorPrenom">* Entrez prenom : </td>

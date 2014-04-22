@@ -1,0 +1,18 @@
+Roles utilisateurs
+Forcer l'utilisation des cookies avec du HTTP only
+Faire la connection au site en SSL si possible avec un test sur le index.php
+Corriger les focntions de l'administration
+Tester les retrours des fonctions d'adminitration
+Proteger le repertoire admin
+Les roles de "write" sont en place, mais il faut contrer les attaques CRLF avec des tokens
+Gérer le cas ou on a pas de topics, ni de categories
+Refaire les entetes
+Faire les tokens pour les formulaires (modfier message et supprimer message
+Mettre le HTTP referer sur les formulaires
+Appliquer les filtres
+Gestion des caractères spéciaux et des accents
+Ajout de liens pour l'ergonomie
+Interdire la lecture du repertoire src
+
+TRUC DANGEREUX :
+	-Stocker l'identifiant dans une variable de topic dans une var de session pour ensuite recup cette valeur dans la page permettant de poster un message. Est-ce que c'est secure ? On stocke dans une var de session le resultat d'un GET... Ainsi il peut poster dans un topic de son choix...

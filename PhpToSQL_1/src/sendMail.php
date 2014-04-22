@@ -1,20 +1,23 @@
 <?php
-//    if(!ini_set("SMTP","ssl://smtp.gmail.com"))
-//            echo 'SMTP ca passe pas'; 
-//    if(!ini_set("smtp_port","465"))
-//            echo 'port ca passe pas'; 
-
-    $to="maxime.chazalviel@hotmail.fr"; 
+ 
+    $to="maxime.chazalviel@gmail.com"; 
     $subject="info";
     $message=  htmlentities($_POST['message']);
     $from=htmlentities($_POST['mail']);
     $phone=htmlentities($_POST['telephone']);
+    ?>
+        
+        <?php 
+    
     if(!empty($phone))
     {
         $message=$message."\r\nMy phone number is ".$phone;
     }
     $headers = "From:".$from;
+
+   
     $mail_status=mail($to,$subject,$message,$headers);
+
     if($mail_status)
     {
         ?>
