@@ -25,7 +25,7 @@
 
         <tr>
             <th colspan=2>
-                <button type="button" name="" value="" class="css3button">submit</button>
+                <button type="button" name="" value="" class="myButton">submit</button>
                 <input type="submit" name="submitRegister" value="Register" />
             </th>
         </tr> 

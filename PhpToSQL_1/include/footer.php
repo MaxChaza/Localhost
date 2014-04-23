@@ -1,9 +1,8 @@
 <div id="footer">
+    <div id="foot">
     <?php
-        
-        
-    //    echo $url."counter/counterContact.txt";
-//        echo calc($url."counter/counter.txt"); 
-        
-    ?> visitor. 
+        echo calc("./counter/counter.txt"); 
+    ?> visitor(s).
+    </div>
+    
 </div>

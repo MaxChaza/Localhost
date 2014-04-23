@@ -25,7 +25,7 @@
         </tr>
         
         <tr>
-            <td align="right"><input type="submit" name="submit" value="Login"></td>
+            <td align="right"><input type="submit" name="submit" value="Login" class="myButton"></td>
         </tr>
         <tr>
             <td>

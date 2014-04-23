@@ -27,7 +27,7 @@
         </tr>
         <tr>
             <td><input type="submit" value="go" class="myButton"/></td>
-            <td><input type="reset" value="reset"/></td>
+            <td><input type="reset" value="reset" class="myButton"/></td>
         </tr>                    
     </table>
 </form>

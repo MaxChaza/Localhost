@@ -7,6 +7,6 @@ When entering data, we asynchronously get the date server side
 <form name="myForm">
     Name: <input type="text" name="username" onkeyup="ajaxFunction();"/>
     Time: <input type="text" name="time" />
-    <input type="reset" value="reset">
+    <input type="reset" value="reset" class="myButton">
 </form>
 <div id="place"></div>
