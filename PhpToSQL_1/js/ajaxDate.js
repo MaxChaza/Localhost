@@ -40,7 +40,7 @@ function ajaxFunction() //this function does the job
                     //we display the content  
                 }
             } //end of the function to be executed
-            ajax.open("GET","dateServer.php",true); //we prepare the request
+            ajax.open("GET","./src/dateServer.php",true); //we prepare the request
             ajax.send();  //we send the request to the server
     }
 } 

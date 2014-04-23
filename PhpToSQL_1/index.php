@@ -5,6 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <link rel="stylesheet" type="text/css" href="./styleCss.css" />
         <?php include('./include/counter.php');?> 
+        <script language="javascript" type="text/javascript" src="./js/ajaxDate.js"></script>
         <script language="javascript" type="text/javascript" src="./js/checkParam.js"></script>
         <script language="javascript" type="text/javascript" src="./js/ajaxUpload.js"></script>
         <script language="javascript" type="text/javascript" src="./js/ajaxCode.js"></script>
@@ -16,20 +17,36 @@
         // Connects to your Database
         if(isset($_POST['nextPage']))
         {
-            if($_POST['nextPage']=='reponseRegister')
+            $nextPage = $_POST['nextPage'];
+            if($nextPage =='reponseRegister')
             {
+                $numberOfRow=0;
                 include("./src/enregistrer.php");
+                if($numberOfRow==0){
             ?>
-                <script type="text/javascript">
-                $(function() {
-                // Déclaration d'attributs.
-                    var page = '<?php echo $_POST['nextPage']; ?>';
-                    showContent(page);
-                 });
-                </script>
-            <?php
+                
+                    <script type="text/javascript">
+                    $(function() {
+                    // Déclaration d'attributs.
+                        var page = '<?php echo $nextPage; ?>';
+                        showContent(page);
+                     });
+                    </script>
+                <?php
+                }
+                else
+                {
+                    ?>
+                    <script type="text/javascript">
+                        $(function() {
+                        // Déclaration d'attributs.
+                            showContent("userExist");
+                         });
+                    </script>
+        <?php
+                }
             }
-            if($_POST['nextPage']=='membre')
+            if($nextPage=='member')
             {
                 include("./src/connecterMembre.php");
                 if((isset($_SESSION["username"])) && (isset($_SESSION["password"]))){
@@ -37,13 +54,51 @@
                     <script type="text/javascript">
                     $(function() {
                     // Déclaration d'attributs.
-                        var page = '<?php echo $_POST['nextPage']; ?>';
+                        var page = '<?php echo $nextPage; ?>';
                         showContent(page);
                      });
                     </script>
             <?php
                 }
             }
+            if($nextPage=='mailEnvoye')
+            {
+                $mail_status=0;
+                include("./src/sendMail.php");
+                if($mail_status)
+                {
+                ?>
+                    <script type="text/javascript">
+                    $(function() {
+                    // Déclaration d'attributs.
+                        var page = '<?php echo $nextPage; ?>';
+                        showContent(page);
+                     });
+                    </script>
+                    <?php 
+                }
+                else 
+                {
+                ?>
+                <script type="text/javascript">
+                    window.alert("Une erreur s'est produite, votre mail n'a pas été envoyé.")
+                </script> 
+                <?php 
+                }
+            }
+            if($nextPage=='serviceRendu')
+            {
+            ?>
+                    <script type="text/javascript">
+                    $(function() {
+                    // Déclaration d'attributs.
+                        var page = '<?php echo $nextPage; ?>';
+                        showContent(page);
+                        upload();
+                     });
+                    </script>
+            <?php
+             }
         }
         ?>
         
@@ -62,9 +117,6 @@
             Welcome on our website
             <div id="titre"></div>
         </div>
-        
-
-
         <?php 
             include("./include/footer.php");
         ?>   

@@ -1,0 +1,1 @@
+Sorry, the username is already in use. Start again <a href="#" onclick="showContent('register')">here</a>'

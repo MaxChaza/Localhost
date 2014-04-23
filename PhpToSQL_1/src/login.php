@@ -7,9 +7,10 @@
             </td>
         </tr>
         <tr>
-            <td id="colorUsername" colspan="0">Username:</td>
+            <td id="colorUsername" >Username:</td>
             <td>
-                <input type="text" name="username" id="username" onsubmit="checkParamLogin()" maxlength="20">
+                <!--onsubmit="checkParamLogin()"-->
+                <input type="text" name="username" id="username"  maxlength="20">
                 <script  type="text/javascript" >
                     var keyUsername = document.getElementById('username');
                     keyUsername.focus();
@@ -18,16 +19,13 @@
             </td>
         </tr>
         <tr>
-            <td id="colorPassword" colspan="0">Password:</td>
-            <td>
-                <input type="password" name="pass" id="pass" maxlength="20">
-            </td>
+            <td id="colorPassword" >Password:</td>
+            <td><input type="password" name="pass" id="pass" maxlength="20"></td>
+            <td><input type="hidden" name="nextPage" id="nextPage" value="member"/></td>
         </tr>
-        <input type="hidden" name="nextPage" id="nextPage" value="membre"/>
+        
         <tr>
-            <td align="right">
-                <input type="submit" name="submit" value="Login">
-            </td>
+            <td align="right"><input type="submit" name="submit" value="Login"></td>
         </tr>
         <tr>
             <td>

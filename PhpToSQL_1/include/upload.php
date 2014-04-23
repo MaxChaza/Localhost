@@ -3,7 +3,7 @@
     {
         $name = basename($_FILES["file1"]["name"]);
         $tempname = basename($_FILES["file1"]["tmp_name"]);
-        $datafile="../uploads/".$name;        
+        $datafile="./uploads/".$name;        
         if(move_uploaded_file($_FILES["file1"]["tmp_name"],$datafile))
         {
                 echo "fichier uploader </br>";
@@ -17,7 +17,7 @@
     {
         $name = basename($_FILES["file2"]["name"]);
         $tempname = basename($_FILES["file2"]["tmp_name"]);
-        $datafile2="../uploads/".$name;
+        $datafile2="./uploads/".$name;
         if(move_uploaded_file($_FILES["file2"]["tmp_name"],$datafile2))
         {
                 echo "fichier uploader </br>";

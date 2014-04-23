@@ -8,5 +8,10 @@ if(isset($_SESSION["username"]) && isset($_SESSION["password"])){
 }
 setcookie("PHPSESSID", "", time()-3600,"/");
 session_destroy();
-header("Location: login.php");
-?> 
+?>
+    <script type="text/javascript">
+    $(function() {
+    // Déclaration d'attributs.
+        showContent("login");
+     });
+    </script>
