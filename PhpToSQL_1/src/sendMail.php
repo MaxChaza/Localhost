@@ -11,7 +11,7 @@
     
     if(!empty($phone))
     {
-        $message=$message."\r\nMy phone number is ".$phone;
+        $message=$message."\r\nMy phone number is ".$phone;
     }
     $headers = "From:".$from;
 

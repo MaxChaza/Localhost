@@ -26,7 +26,7 @@
             <td><input type="hidden" name="nextPage" id="nextPage" value="mailEnvoye"/></td>
         </tr>
         <tr>
-            <td><input type="submit" value="go" /></td>
+            <td><input type="submit" value="go" class="myButton"/></td>
             <td><input type="reset" value="reset"/></td>
         </tr>                    
     </table>

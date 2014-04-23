@@ -5,15 +5,14 @@
  */
 function upload(){
     var ok;
-    document.getElementById("image").innerHTML("<img src='./image/fox.jpg'");
-    var fd = new FormData(document.getElementById("myFormAjax"));
-//    ajax.onreadystatechange = function(){
-//        if(ajax.readyState == 4){
-//            document.getElementById("answerArea").innerHTML=ajax.responseText;
-//        }
-//    }
+    document.getElementById("image").innerHTML = document.getElementById("myFormAjax");
+    var fd;
+    fd = new FormData();
+    ajax.onreadystatechange = function(){
+        if(ajax.readyState == 4){
+            document.getElementById("answerArea").innerHTML=ajax.responseText;
+        }
+    }
     ok = false;
     return ok;
 }
-
-
