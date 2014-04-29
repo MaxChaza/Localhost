@@ -1,4 +1,3 @@
-
 <form onsubmit="return checkParamLogin()" method="post">
     <table border="0">
         <tr>
