@@ -41,13 +41,3 @@
     (*) Les champs pr&eacute;c&eacute;d&eacute;s d'une &eacute;toile sont obligatoires.
 </div>
 
-<div>
-    <?php  
-        if(!empty($_POST['prenom']) && !empty($_POST['nom'])){
-            include('../include/onBosse.php'); 
-        }
-    ?>
-</div>
-<!--<div id="footer">
-     <?php //  echo calc("../counter/counterContact.txt") ?> visitor. 
-</div>-->
