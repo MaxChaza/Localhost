@@ -1,4 +1,3 @@
-
 <form  onsubmit="return checkParamRegister()" name="log" method="post">
     <table border="0">
         <tr>
