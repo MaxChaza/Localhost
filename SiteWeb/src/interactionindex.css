@@ -1,0 +1,31 @@
+@import "index.css";
+#home{
+	background-image: url('../images/interaction.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover; 
+    width: 100%;
+	text-align:left;
+}
+.menu li:hover > a { color: #E85914;}
+
+.myName h1:hover > a { color: #E85914; }
+
+#ligneNoir
+{
+	background-color:#E85914;
+}
+#ligne
+{
+	background-color:rgba(232, 89, 20, 0.30);
+}
+
+#surmiddle
+{
+	background-color:rgba(232, 89, 20, 0.10);
+}
+
+#lignePied
+{
+	background-color:#E85914;
+}

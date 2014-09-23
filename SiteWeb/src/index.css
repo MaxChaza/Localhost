@@ -435,6 +435,7 @@ figure img{
 .menu a.documents { background: url(../images/star1.png) no-repeat 6px center; }
 .menu a.messages { background: url(../images/opallogo.png) no-repeat 6px center; }
 .menu a.signout { background: url(../images/Q.png) no-repeat 6px center; }
+.menu a.irit { background: url(../images/android.png) no-repeat 6px center; }
 
 #home
 {

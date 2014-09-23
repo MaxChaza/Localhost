@@ -18,7 +18,7 @@
 
 <head>
 
-	<title>Maxime Chazalviel - D&eacute;veloppeur</title>
+	<title>Maxime Chazalviel</title>
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
@@ -69,6 +69,8 @@
 						<li><a href="src/opal.php" class="messages">Opal-GUI</a></li>
 
 						<li><a href="src/quadran.php" class="signout">Quadran</a></li>
+						
+						<li><a href="src/interaction.php" class="irit">IRIT</a></li>
 
 						<!-- <li><a href="#" class="signout"><?php echo $projetut;?></a></li>-->
 

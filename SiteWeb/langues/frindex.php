@@ -8,7 +8,8 @@
 
 	 */
 
-	$intitule = 'D&eacute;veloppeur Informatique';
+	$intitule = 'D&eacute;veloppeur Informatique
+	& &eacute;tudiant en BioInformatique';
 
 	$stage = 'Stage &agrave; Quadran';
 
@@ -22,9 +23,11 @@
 
 	<p>
 
-				Je suis un &eacute;tudiant dipl&ocirc;m&eacute; en licence 3 informatique, &agrave; l\'Universit&eacute; de Limoges.
+				Je suis un &eacute;tudiant en deuxi&egrave;me ann&eacute;e de Master Microbiologie Agrobiosciences Bioinformatique et biologie des Syst&egrave;mes &agrave; l\'universit&eacute; Paul Sabatier de Toulouse.
 
-				Mes int&eacute;r&ecirc;ts tournent autour du d&eacute;veloppement logiciel ainsi que du d&eacute;veloppement web. Je suis notamment d&eacute;veloppeur Java &agrave; mes heures perdues. 
+				Mes int&eacute;r&ecirc;ts tournent autour du d&eacute;veloppement logiciel ainsi que du d&eacute;veloppement web adapt&eacute &agrave; la biologie. 
+				Mon objectif est d\'int&eacute;grer une entreprise ou un organisme ayant besoin de d&eacute;velopper des logiciels permettant des innovations biologique ou de montrer les m&eacute;faits de certains produits,
+				dans le but d\'am&eacute;liorer la sant&eacute; des &ecirc;tres vivants. 
 
 	</p>
 

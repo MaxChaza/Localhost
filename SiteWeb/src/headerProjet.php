@@ -7,7 +7,7 @@
    
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
 <head>
-	<title>Maxime Chazalviel - D&eacute;veloppeur</title>
+	<title>Maxime Chazalviel</title>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
 	<!-- Lien vers ma feuille de styles css -->
@@ -33,6 +33,7 @@
 						<li><a href="asteroids.php" class="documents">Asteroids</a></li>
 						<li><a href="opal.php" class="messages">Opal-GUI</a></li>
 						<li><a href="quadran.php" class="signout">Quadran</a></li>
+						<li><a href="interaction.php" class="irit">IRIT</a></li>
 						<!-- <li><a href="#" class="signout"><?php echo $projetut;?></a></li>-->
 					</ul>
 				</li>
