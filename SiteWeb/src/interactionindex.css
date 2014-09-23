@@ -7,25 +7,25 @@
     width: 100%;
 	text-align:left;
 }
-.menu li:hover > a { color: #E85914;}
+.menu li:hover > a { color: #B00000;}
 
-.myName h1:hover > a { color: #E85914; }
+.myName h1:hover > a { color: #B00000; }
 
 #ligneNoir
 {
-	background-color:#E85914;
+	background-color:#B00000;
 }
 #ligne
 {
-	background-color:rgba(232, 89, 20, 0.30);
+	background-color:rgba(176, 0, 0, 0.30);
 }
 
 #surmiddle
 {
-	background-color:rgba(232, 89, 20, 0.10);
+	background-color:rgba(176, 0, 0, 0.10);
 }
 
 #lignePied
 {
-	background-color:#E85914;
+	background-color:#B00000;
 }
