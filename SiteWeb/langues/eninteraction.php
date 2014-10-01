@@ -6,18 +6,15 @@
 	$stage = 'Internship from IRIT';
 	$presentation = '
 			<p>
-				My Internship from IRIT is confidential.
-				It allowed to me to treat:
+				My Internship from IRIT (Institut de Recherche en Informatique de Toulouse) is confidential.
+				It allowed to me :
 				<ul> 
-					<li> the first 
-					le premier tool to create Java GUI "Swing" </li> 
-					<li> the json template</li> 
+					<li> to treat Java and XLM to develop application for Android  </li> 
+					<li> to treat OpenGLES a library to create 3D environments for mobile devices</li> 
 					<li> a servlet to get back dynamically datas on an HTTP. server</li> 
-					<li> the web site quality requirements</li> 
-					<li> and a tomcat JavaServer. </li> 
+					<li> to participate to participate in research human-machine interaction. </li> 
 				</ul>  
-				We used the Agile progect management to have an usable product whatever the progress.
-				This internship allowed me to be faced of the environment of the company.
+				This internship in the ELIPSE team of IRIT allowed me to be faced of the environment of the research community.
 			</p>
 
 			<p>
@@ -25,7 +22,7 @@
 			</p>
 
 			<ul> 
-					<li> QUADRAN  <a href="http://www.quadran.eu/" class="link">web site</a></li> 
+					<li> IRIT  <a href="http://www.irit.fr/?lang=en" class="link">website</a></li> 
 			</ul> 
 			';
 	 

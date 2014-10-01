@@ -81,11 +81,16 @@
     animation: figcaptionner 32s infinite;  
 } 
 
-
-
+/*
 @keyframes figcaptionner {  
     0%, 33%, 66%, 100%                     { bottom: -55px;    }  
     3%, 30%, 36%, 63%, 69%, 99%       { bottom: 5px;      }  
+}
+*/
+
+@keyframes figcaptionner {  
+    0%, 25%, 50%, 75%, 100%                     { bottom: -55px;    }  
+    3%, 22%, 28%, 47%, 53%, 72%, 78%, 99%       { bottom: 5px;      }  
 } 
 
 /* complétez le sélecteur : */  
@@ -95,10 +100,19 @@
 }  
 
 /* fonction d'animation, n'oubliez pas de prefixer ! */  
+/*
 @keyframes slider {  
 	0%, 30%, 100%   { left: 0 }  
 	33%, 63%        { left: -100% }  
 	66%, 99%        { left: -200% }  
+}  
+*/
+
+@keyframes slider {  
+	0%, 22%, 100%   { left: 0 }  
+	25%, 47%        { left: -100% }  
+	50%, 72%        { left: -200% }  
+	75%, 99%        { left: -300% }  
 }  
 
 #timeline {  
@@ -114,14 +128,21 @@
     animation: timeliner 32s infinite;  
 } 
 
+/*
 @keyframes timeliner {  
 	0%, 33%, 66%, 100% { width: 0;     }  
 	30%, 63%, 99%      { width: 100%; }  
 }  
+*/
+
+@keyframes timeliner {  
+	0%, 25%, 50%, 75%, 100% { width: 0;     }  
+	22%, 47%, 72%, 99%      { width: 100%; }  
+}  
 
 figure{
 	margin:0px;
-	width:25%;
+	width:20%;
 }
 
 figure img{
@@ -188,7 +209,7 @@ figure img{
 #slideshow .slider {  
 	position: absolute;  
 	left:0; top:0;  
-	width: 400%;  
+	width: 500%;  
 	height: 310px;  
 }  
 /* annulation des marges sur figure */  

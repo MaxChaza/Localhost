@@ -12,6 +12,7 @@
 	& &eacute;tudiant en BioInformatique';
 
 	$stage = 'Stage &agrave; Quadran';
+	$stageIrit = 'Stage &agrave; l\'IRIT';
 
 	$presentation = '
 

@@ -28,6 +28,8 @@
 
 	<link rel="stylesheet" type="text/css" href="src/index.css" />
 
+	<script type="text/javascript" src="src/cprefixfree.dynamic-dom.js"></script>
+	
 </head>
 
 
@@ -129,7 +131,6 @@
 					<div class="slider">  
 
 					
-
 						<a href="src/asteroids.php" style="margin-right:-4px">
 
 							<figure>
@@ -158,7 +159,7 @@
 
 						
 
-						<a href="src/quadran.php">
+						<a href="src/quadran.php" style="margin-right:-4px">
 
 							<figure>
 
@@ -170,6 +171,20 @@
 
 						</a>
 
+						
+						
+						<a href="src/interaction.php" >
+
+							<figure>
+
+								<img src="images/interaction.jpg" alt="" height="600" />
+
+								<figcaption><?php echo $stageIrit;?></figcaption>
+
+							</figure>
+
+						</a>
+						
 					</div>  
 
 				</div>  
