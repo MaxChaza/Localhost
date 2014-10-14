@@ -10,7 +10,7 @@
 				Mes coll&egrave;gues et moi devions d&eacute;velopper une IHM pour utiliser la biblioth&egrave;que OPAL.
 			</p>
 			<p>
-				Pour r&eacute;sumer, OPAL (Open Platform Access Library) est une biblioth&egrave;que Java open source qui suis les sp&eacute;cifications Global Platform, et offres plusieurs fonctions
+				Pour r&eacute;sumer, OPAL (Open Platform Access Library) est une biblioth&egrave;que Java open source qui suit les sp&eacute;cifications Global Platform, et offre plusieurs fonctions
 				(manipulation de cap file , gestion de carte &agrave; puce,..). 
 			</p>
 			<p>
@@ -24,7 +24,7 @@
 				</ul> 
 			</p>
 			<p>
-				Ce projet &agrave; &eacute;tait tr&egrave;s enrichissant. J\'ai acqu&eacute;ri beaucoup d\'exp&eacute;riences techniques. Dans ce projet nous avons utilis&eacute; le patron de conception MVC, le premier outils de cr&eacute;ation d\'IHM Java "Swing", la technologie JavaCard, Mercurial pour g&eacute;rer les versions du logiciel et Maven pour g&eacute;rer la sa production.
+				Ce projet a &eacute;t&eacute; tr&egrave;s enrichissant. J\'ai acquis beaucoup d\'exp&eacute;riences techniques. Dans ce projet nous avons utilis&eacute; le patron de conception MVC, le premier outil de cr&eacute;ation d\'IHM Java "Swing", la technologie JavaCard, Mercurial pour g&eacute;rer les versions du logiciel et Maven pour g&eacute;rer sa production.
 			</p>
 			<p>
 				R&eacute;ferences :

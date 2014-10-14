@@ -22,7 +22,7 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
 
 	<!-- Lien vers ma feuille de styles css -->
 
