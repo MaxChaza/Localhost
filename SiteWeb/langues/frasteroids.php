@@ -36,6 +36,6 @@
 
 			';
 
-	$telecharge = 'T&eacute;l&eacute;charger le jeu complet.';
+	$telecharge = 'T&eacute;l&eacute;charger le jeu.';
 
 ?>

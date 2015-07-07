@@ -28,48 +28,22 @@
 
 		</p>
 
-		
-
-		<div id ="jeu">
-
-			<table id="page-table">
-
-				<tr>
-
-					<td id="page-td">
-
-						<applet 	
-
-								codebase = "../classes"
-
-								code     = "org/ast/AsteroVue.class"
-
-								archive  = "JAppletAsteroids.jar"
-
-								alt="Navigateur non compatible JAVA" 
-
-								width="800" 
-
-								height="700"
-
-								>
-
-						</applet>
-
-					</td>
-
-				</tr>
-
-			</table>			
-
+		<div id="divvideos" >
+			<video id="video"controls src="../videos/force.ogv" width="60%"></video>
 		</div>
+	</div>
 
 
-		<div id ="espace">
+	<div id ="espace"></div>	
 
-		</div>
+	<div id="insignes" >
+		<img src="../images/Logo-Unilim.png" height="100px"/>
+	</div>
+	
+	<div id ="espace">
 
 	</div>
+
 
 	
 

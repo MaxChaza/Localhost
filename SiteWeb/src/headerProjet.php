@@ -34,6 +34,7 @@
 						<li><a href="opal.php" class="messages">Opal-GUI</a></li>
 						<li><a href="quadran.php" class="signout">Quadran</a></li>
 						<li><a href="interaction.php" class="irit">IRIT</a></li>
+						<li><a href="metexplore.php" class="metexplore">MetExplore</a></li>
 						<!-- <li><a href="#" class="signout"><?php echo $projetut;?></a></li>-->
 					</ul>
 				</li>

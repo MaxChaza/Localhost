@@ -9,7 +9,7 @@
 	 */
 
 	$intitule = 'D&eacute;veloppeur Informatique
-	& &eacute;tudiant en BioInformatique';
+	& Ingenieur en BioInformatique';
 
 	$stage = 'Stage &agrave; Quadran';
 	$stageIrit = 'Stage &agrave; l\'IRIT';
@@ -24,7 +24,7 @@
 
 	<p>
 
-				Je suis un &eacute;tudiant en deuxi&egrave;me ann&eacute;e de Master Microbiologie Agrobiosciences Bioinformatique et biologie des Syst&egrave;mes &agrave; l\'universit&eacute; Paul Sabatier de Toulouse.
+				Je suis ing&eacute;nieur Bioinformatique.
 
 				Mes int&eacute;r&ecirc;ts tournent autour du d&eacute;veloppement logiciel ainsi que du d&eacute;veloppement web adapt&eacute &agrave; la biologie. 
 				Mon objectif est d\'int&eacute;grer une entreprise ou un organisme ayant besoin de d&eacute;velopper des logiciels permettant des innovations biologiques ou de montrer les m&eacute;faits de certains produits,

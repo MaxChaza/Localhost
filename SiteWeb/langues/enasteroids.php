@@ -35,6 +35,6 @@
 
 			';
 
-	$telecharge = 'Download the complete game.';
+	$telecharge = 'Download the game.';
 
 ?>

@@ -74,6 +74,8 @@
 						
 						<li><a href="src/interaction.php" class="irit">IRIT</a></li>
 
+						<li><a href="src/metexplore.php" class="metexplore">MetExplore</a></li>
+
 						<!-- <li><a href="#" class="signout"><?php echo $projetut;?></a></li>-->
 
 					</ul>
@@ -180,6 +182,18 @@
 								<img src="images/interaction.jpg" alt="" height="600" />
 
 								<figcaption><?php echo $stageIrit;?></figcaption>
+
+							</figure>
+
+						</a>
+						
+						<a href="src/metexplore.php" >
+
+							<figure>
+
+
+								<img src="images/metexplore.jpg" alt="" height="600" />
+								<figcaption><?php echo $stageInra;?></figcaption>
 
 							</figure>
 
